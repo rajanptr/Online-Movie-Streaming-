@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap" rel="stylesheet">
+
+    <!-- fontawsome kit -->
+    <script src="https://kit.fontawesome.com/9d071d29cc.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="avengers.css">
+
+    <link rel="icon" type="images" href="/main/fav.png">
+
+    <title>The Avengers</title>
+</head>
+
+<body>
+    <div class="logobox"><a href="index.html"><img class="logo" src="/main/logo.svg" alt="logo"></a></div>
+
+    <div class="poster">
+        <img src="https://kldvvpjjuyebtwzwvumi.supabase.co/storage/v1/object/sign/avengers/the avengers wide.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhdmVuZ2Vycy90aGUgYXZlbmdlcnMgd2lkZS5qcGciLCJpYXQiOjE2NTgxNDUzNDgsImV4cCI6MTk3MzUwNTM0OH0.X7F6VKX72tnid7W6aoN5U7BLctNzn1p9p6bb53xr0Tc"
+            alt="The Avengers">
+    </div>
+
+    <div class="name">
+        <h1>The Avengers</h1>
+        <p>Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the
+            mischievous Loki and his alien army from enslaving humanity.</p>
+        <p><span>Director :</span> Joss Whedon<br>
+            <span>Writers :</span> Joss Whedon(screenplay)Zak Penn(story) <br>
+            <span>Stars :</span> Robert Downey Jr., Chris Evans, Scarlett Johansson, ...
+        </p>
+
+        <a href="#vplay"><button onclick="vclick()">Play</button></a> 
+
+    </div>
+    <div class="player">
+        <video id="vplay" class="videoplr" controls="controls" preload="auto"
+            poster="https://kldvvpjjuyebtwzwvumi.supabase.co/storage/v1/object/sign/avengers/the avengers wide.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhdmVuZ2Vycy90aGUgYXZlbmdlcnMgd2lkZS5qcGciLCJpYXQiOjE2NTgyMjI2NTYsImV4cCI6MTk3MzU4MjY1Nn0.8RnVRnhQpDXGiBaECGo0RoF3j1POEWWHPhm7Ek8HWWU">
+            <source
+                src="https://kldvvpjjuyebtwzwvumi.supabase.co/storage/v1/object/sign/avengers/Marvel%20Studios_%20Avengers%20-%20Official%20Trailer(1080P_HD).mp4?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhdmVuZ2Vycy9NYXJ2ZWwgU3R1ZGlvc18gQXZlbmdlcnMgLSBPZmZpY2lhbCBUcmFpbGVyKDEwODBQX0hEKS5tcDQiLCJpYXQiOjE2NTgyMjI0NDcsImV4cCI6MTk3MzU4MjQ0N30.da1sf32T06F0mw3Y5_QhV1_fsSUWJkTcP1s4bPwkjHA&t=2022-07-19T09%3A20%3A46.803Z"
+                type="video/mp4">
+        </video>
+    </div>
+
+    <script>
+        var vid= document.getElementById("vplay");
+        function vclick(){
+            vid.play();
+        }
+    </script>
+    
+</body>
+
+</html>
