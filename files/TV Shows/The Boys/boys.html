@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap" rel="stylesheet">
+
+
+    <!-- Flickity plugin -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="/path/to/cdn/jquery.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <link rel="stylesheet" href="boys.css">
+    <script src="boys.js"></script>
+
+    <link rel="icon" type="images" href="fav.png">
+    <script src="/main/movie.js"></script>
+
+    <title id="title">Tvshow | THE BOYS </title>
+</head>
+
+<body>
+    <section class="page">
+
+        <img class="logo" src="/main/logo.svg" alt="logo">
+        <h1 class="name" id="name">THE BOYS</h1>
+        <img class="poster" id="poster"
+            src="https://kldvvpjjuyebtwzwvumi.supabase.co/storage/v1/object/sign/tvshows/the-boys-homelander.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJ0dnNob3dzL3RoZS1ib3lzLWhvbWVsYW5kZXIuanBnIiwiaWF0IjoxNjU4NjY5NjA0LCJleHAiOjE5NzQwMjk2MDR9.0tw4l6N8fXytZdjqTTZoivPtM99mcZ59KFccYU6DfgQ"
+            alt="poster">
+
+        <div class="about">
+            <p> The Boys is an American superhero television series developed by Eric Kripke for Amazon Prime Video.
+                Based on the comic book of the same name by Garth Ennis and Darick Robertson, it follows the eponymous
+                team of vigilantes as they combat superpowered individuals who abuse their abilities. The series
+                features an ensemble cast that includes Karl Urban, Jack Quaid, Antony Starr, Erin Moriarty, Dominique
+                McElligott, Jessie T. Usher, Chace Crawford, Laz Alonso, Tomer Capone, Karen Fukuhara, and Nathan
+                Mitchell.<br><br>
+            </p>
+
+            <a href="#vplay"><button onclick="vclick()">Play</button></a>
+        </div>
+
+
+        <div class="player">
+            <video id="vplay" class="videoplr" controls="controls" preload="auto" autoplay
+                poster="https://kldvvpjjuyebtwzwvumi.supabase.co/storage/v1/object/sign/boys/The Boys.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJib3lzL1RoZSBCb3lzLmpwZyIsImlhdCI6MTY1ODY2OTcxMywiZXhwIjoxOTc0MDI5NzEzfQ.w61cxj_Yixfm2eXj8ZvsFrFjF1bY3TokVuIn8p9kWlI">
+                <source
+                    src="https://kldvvpjjuyebtwzwvumi.supabase.co/storage/v1/object/sign/boys/The%20Boys%20_%20Season%201.mp4?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJib3lzL1RoZSBCb3lzIF8gU2Vhc29uIDEubXA0IiwiaWF0IjoxNjU4NjcwOTk0LCJleHAiOjE5NzQwMzA5OTR9.KaCCZyEJFJ55aDIDkxmta2WKaHxwm-lB5SnKwkCmuy0&t=2022-07-24T13%3A56%3A34.761Z"
+                    type="video/mp4">
+            </video>
+            <div class="aboutep">
+                <h2 id="headtitle">Watch Trailer</h2><br><br>
+                <p id="next">Next Episode</p><br>
+                <p id="nextep">Episode 1</p>
+            </div>
+        </div>
+
+        </div>
+
+
+
+        <div class="seasons">
+
+            <div class="slide">
+                <h3>SEASON 1</h3>
+                <div class="carousel"
+                    data-flickity='{"wrapAround":true,"pageDots": true, "freeScroll": true, "prevNextButtons": false}'>
+                    <div class="carousel-cell">
+                        <!-- Episode 1 -->
+                        <div class="show"><img class="thumnail" onclick="change1()"
+                                src="https://kldvvpjjuyebtwzwvumi.supabase.co/storage/v1/object/sign/boys/the-boys-poster.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJib3lzL3RoZS1ib3lzLXBvc3Rlci53ZWJwIiwiaWF0IjoxNjU4NjY5OTMwLCJleHAiOjE5NzQwMjk5MzB9.IWFWMgTRYzBl8MycWEL_Zx7Hk_zpyHlpKhKPAy2hHlA"
+                                alt="Episode 1">
+                            <p>Episode 1</p>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <!-- Episode 2  -->
+                        <div class="show"><img class="thumnail" onclick="change2()"
+                                src="https://kldvvpjjuyebtwzwvumi.supabase.co/storage/v1/object/sign/boys/the-boys-poster.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJib3lzL3RoZS1ib3lzLXBvc3Rlci53ZWJwIiwiaWF0IjoxNjU4NjY5OTMwLCJleHAiOjE5NzQwMjk5MzB9.IWFWMgTRYzBl8MycWEL_Zx7Hk_zpyHlpKhKPAy2hHlA"
+                                alt="Episode 2">
+                            <p>Episode 2</p>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <!-- Episode 3 -->
+                        <div class="show"><a href="#"><img class="thumnail" onclick="change3()"
+                                    src="https://kldvvpjjuyebtwzwvumi.supabase.co/storage/v1/object/sign/boys/the-boys-poster.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJib3lzL3RoZS1ib3lzLXBvc3Rlci53ZWJwIiwiaWF0IjoxNjU4NjY5OTMwLCJleHAiOjE5NzQwMjk5MzB9.IWFWMgTRYzBl8MycWEL_Zx7Hk_zpyHlpKhKPAy2hHlA"
+                                    alt="Episode 3"></a>
+                            <p>Episode 3</p>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <!-- Episode 4 -->
+                        <div class="show"><a href="#"><img class="thumnail" onclick="change4()"
+                                    src="https://kldvvpjjuyebtwzwvumi.supabase.co/storage/v1/object/sign/boys/the-boys-poster.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJib3lzL3RoZS1ib3lzLXBvc3Rlci53ZWJwIiwiaWF0IjoxNjU4NjY5OTMwLCJleHAiOjE5NzQwMjk5MzB9.IWFWMgTRYzBl8MycWEL_Zx7Hk_zpyHlpKhKPAy2hHlA"
+                                    alt="Episode 4"></a>
+                            <p>Episode 4</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+               
+
+
+                    <script>
+                        var vid = document.getElementById("vplay");
+                        function vclick() {
+                            vid.play();
+                        }
+                    </script>
+
+
+
+    </section>
+
+
+
+
+</body>
+
+</html>
