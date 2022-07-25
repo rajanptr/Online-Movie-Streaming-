@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap" rel="stylesheet">
+
+    <!-- fontawsome kit -->
+    <script src="https://kit.fontawesome.com/9d071d29cc.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="ageofultron.css">
+
+    <link rel="icon" type="images" href="/main/fav.png">
+
+    <title>Avengers: Age of Ultron</title>
+</head>
+
+<body>
+    <div class="logobox"><a href="main/main.html"><img class="logo" src="/main/logo.svg" alt="logo"></a></div>
+
+    <div class="poster">
+        <img src="https://kldvvpjjuyebtwzwvumi.supabase.co/storage/v1/object/sign/avengers/Avengers Age of Ultron-wide.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhdmVuZ2Vycy9BdmVuZ2VycyBBZ2Ugb2YgVWx0cm9uLXdpZGUuanBnIiwiaWF0IjoxNjU4MTUxNzE5LCJleHAiOjE5NzM1MTE3MTl9.CmJ-8axwfspcf0QHpUQABq4VhwkmgLId5T34o67JhpI"
+            alt="Avengers: Age of Ultron">
+    </div>
+
+    <div class="name">
+        <h1>Avengers: Age of Ultron</h1>
+        <p>When Tony Stark and Bruce Banner try to jump-start a dormant peacekeeping program called Ultron, things go
+            horribly wrong and it's up to Earth's mightiest heroes to stop the villainous Ultron from enacting his
+            terrible plan.</p>
+        <p><span>Director :</span> Joss Whedon <br>
+            <span>Writers :</span> Joss WhedonStan Lee(based on the Marvel comics by)Jack Kirby(based on the Marvel
+            comics by)<br>
+            <span>Stars :</span> Robert Downey Jr., Chris Evans, Mark Ruffalo, ...
+        </p>
+
+        <a href="#vplay"><button onclick="vclick()">Play</button></a> 
+
+    </div>
+
+    <div class="player">
+        <video id="vplay" class="videoplr" controls="controls" preload="auto"
+            poster="https://kldvvpjjuyebtwzwvumi.supabase.co/storage/v1/object/sign/avengers/Avengers Age of Ultron-wide.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhdmVuZ2Vycy9BdmVuZ2VycyBBZ2Ugb2YgVWx0cm9uLXdpZGUuanBnIiwiaWF0IjoxNjU4MjIyODYxLCJleHAiOjE5NzM1ODI4NjF9.t2nm5RqrMUrmbd7jZK2peAMIKsPa7HbkAIcaZMmn9_8">
+            <source
+                src="https://kldvvpjjuyebtwzwvumi.supabase.co/storage/v1/object/sign/avengers/Avengers_%20Age%20of%20Ultron.mp4?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhdmVuZ2Vycy9BdmVuZ2Vyc18gQWdlIG9mIFVsdHJvbi5tcDQiLCJpYXQiOjE2NTgyMjczNzUsImV4cCI6MTk3MzU4NzM3NX0.ZFkcO0n3I6eHlJdvmDRgxQgtDk0tsu5WcJOcafDtMB4&t=2022-07-19T10%3A42%3A54.265Z"
+                type="video/mp4">
+        </video>
+    </div>
+
+    <script>
+        var vid= document.getElementById("vplay");
+        function vclick(){
+            vid.play();
+        }
+    </script>
+
+</body>
+
+</html>
