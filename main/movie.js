@@ -1,43 +1,4 @@
 
-function mouseo() {
-   video.setAttribute("controls", "controls");
-
-}
-
-function mousel() {
-   video.removeAttribute("controls");
-}
-
-
-function mouseo2() {
-
-   video2.setAttribute("controls", "controls");
-}
-
-function mousel2() {
-
-   video2.removeAttribute("controls");
-}
-
-function mouseo3() {
-
-   video3.setAttribute("controls", "controls");
-}
-
-function mousel3() {
-
-   video3.removeAttribute("controls");
-}
-
-function mouseo4() {
-
-   video4.setAttribute("controls", "controls");
-}
-
-function mousel4() {
-
-   video4.removeAttribute("controls");
-}
 
 // ========================================================
 
