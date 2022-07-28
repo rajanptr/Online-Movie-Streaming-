@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    transition: 500ms ease-in-out;
+}
+
+.page {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://kldvvpjjuyebtwzwvumi.supabase.co/storage/v1/object/sign/image/aven.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZS9hdmVuLmpwZyIsImlhdCI6MTY1NzU2MDIwMiwiZXhwIjoxOTcyOTIwMjAyfQ.UZAioToK6unwPRMDgmzeJjMJ4dzSjA1i_2TdSvHpYZc);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+}
+
+.logo {
+    width: 2.5rem;
+    margin-left: 4%;
+    margin-top: 2rem;
+    filter: invert(25%) sepia(70%) saturate(6853%) hue-rotate(354deg) brightness(90%) contrast(113%);
+}
+
+.wlc P {
+    width: 35%;
+    margin-left: 4%;
+    font-size: 2.8rem;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    margin-top: 12%;
+    letter-spacing: 3px;
+    position: absolute;
+}
+
+.wlc span {
+    font-size: 2.8rem;
+    color: #F50404;
+}
+
+.buttons{
+    width: 35%;
+    margin-left: 4rem;
+    text-align: center;
+    position: absolute;
+}
+
+.subtn{
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    /* margin-right: 6rem; */
+    /* float: right; */
+  
+    margin-top: 20rem;
+    background-color: #F50404;
+    color: #fff;
+    width: 8rem;
+    height: 2rem;
+}
+.sibtn{
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    /* margin-right: 6rem; */
+    /* float: right; */
+  
+    margin-top: 20rem;
+    background-color: #F50404;
+    color: #fff;
+    width: 8rem;
+    height: 2rem;
+}
+
+@media only screen and (max-width: 600px){
+
+    *{
+        font-size: 60%;
+    }
+
+    .buttons{
+        width: 50%;
+    }
+    
+}
+
+@media only screen and (max-width: 768px){
+    
+    *{
+        font-size: 60%;
+    }
+
+    .buttons{
+        width: 50%;
+    }
+    
+}
