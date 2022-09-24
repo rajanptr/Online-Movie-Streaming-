@@ -54,11 +54,5 @@ function knowmore6(){
 // ==========================================================
 
 function adult(){
-     var con = confirm ("This video contains content that some may find disturbing. Viewer discretion is advised.");   
-            if(con == true) {   
-                ;   
-            }    
-            else {   
-                document.write ("User does not want to continue");   
-            } 
+   alert ("This video contains content that some may find disturbing. Viewer discretion is advised.");
 }
