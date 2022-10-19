@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap" rel="stylesheet">
+
+    <!-- fontawsome kit -->
+    <script src="https://kit.fontawesome.com/9d071d29cc.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="sonic.css">
+
+    <link rel="icon" type="images" href="/main/fav.png">
+
+    <title>Sonic</title>
+</head>
+
+<body>
+    <div class="logobox"><a href="../main/main.html"><img class="logo" src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/logo.svg" alt="logo"></a></div>
+
+    <div class="poster">
+        <img src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Movie/sonic%20wide%202.jpg"
+            alt="sonic">
+    </div>
+
+    <div class="name">
+        <h1>Sonic the Hedgehog</h1>
+        <p>After discovering a small, blue, fast hedgehog, a small-town police officer must help him defeat an evil
+            genius who wants to do experiments on him.</p>
+        <p><span>Director :</span> Jeff Fowler <br>
+            <span>Writers :</span> Pat Casey, Josh Miller <br>
+            <span>Stars :</span> Ben Schwartz(voice), James Marsden, Jim Carrey
+        </p>
+
+        <a href="#vplay"><button onclick="vclick()">Play</button></a> 
+
+    </div>
+    <div class="player">
+        <video id="vplay" class="videoplr" controls="controls" preload="auto"
+            poster="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Movie/sonic%20wide%202.jpg">
+            <source
+                src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Movie/Sonic%20The%20Hedgehog%20(2020)%20-%20New%20Official%20Trailer%20-%20Paramount%20Pictures%20(1).mp4?t=2022-10-17T21%3A10%3A48.966Z"
+                type="video/mp4">
+        </video>
+    </div>
+
+    <script>
+        var vid= document.getElementById("vplay");
+        function vclick(){
+            vid.play();
+        }
+    </script>
+
+</body>
+
+</html>

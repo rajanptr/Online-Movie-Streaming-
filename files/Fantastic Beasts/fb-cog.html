@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap" rel="stylesheet">
+
+    <!-- fontawsome kit -->
+    <script src="https://kit.fontawesome.com/9d071d29cc.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="fb-cog.css">
+
+    <link rel="icon" type="images" href="/main/fav.png">
+
+    <title>Fantastic Beasts: The Crimes of Grindelwald</title>
+</head>
+
+<body>
+    <div class="logobox"><a href="main/main.html"><img class="logo" src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/logo.svg" alt="logo"></a></div>
+
+    <div class="poster">
+        <img src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Movie/fantastic%20beasts%20the%20crimes%20of%20grindelwald.avif"
+            alt="">
+    </div>
+    <div class="name">
+        <h1>Fantastic Beasts: The Crimes of Grindelwald</h1>
+        <p>The second installment of the "Fantastic Beasts" series featuring the adventures of Magizoologist Newt
+            Scamander.</p>
+
+        <p><span>Director:</span> David Yates <br>
+            <span>Writers:</span> J.K. Rowling(based upon characters created by) <br>
+            <span>Stars:</span> Eddie Redmayne, Katherine Waterston, Dan Fogler
+        </p>
+
+
+        <a href="#vplay"><button onclick="vclick()">Play</button></a> 
+
+    </div>
+
+    <div class="player">
+        <video id="vplay" class="videoplr" controls="controls" preload="auto"
+            poster="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Movie/fantastic%20beasts%20the%20crimes%20of%20grindelwald.avif">
+            <source
+                src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Movie/Fantastic%20Beasts_%20The%20Crimes%20of%20Grindelwald%20-%20Official%20Teaser%20Trailer(1080P_HD)%20(1).mp4?t=2022-10-17T21%3A02%3A47.143Z"
+                type="video/mp4">
+        </video>
+    </div>
+
+    <script>
+        var vid= document.getElementById("vplay");
+        function vclick(){
+            vid.play();
+        }
+    </script>
+
+</body>

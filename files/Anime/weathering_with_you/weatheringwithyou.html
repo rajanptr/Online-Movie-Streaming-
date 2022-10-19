@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap" rel="stylesheet">
+
+    <!-- fontawsome kit -->
+    <script src="https://kit.fontawesome.com/9d071d29cc.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="weatheringwithyou.css">
+
+    <link rel="icon" type="images" href="/main/fav.png">
+
+    <title>weathering with you</title>
+</head>
+
+<body>
+    <div class="logobox"><a href="../main/main.html"><img class="logo" src="../main/logo.svg" alt="logo"></a></div>
+
+    <div class="poster">
+        <img src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Anime/WWY/wwy.jpg"
+            alt="weatheringwithyou">
+    </div>
+    <div class="name">
+        <h1>Weathering with you</h1>
+        <p>A high-school boy who has run away to Tokyo befriends a girl who appears to be able to manipulate the weather.</p>
+
+        <p><span>Director :</span> Makoto Shinkai <br>
+            <span>Writers :</span>  Makoto Shinkai <br>
+            <span>Stars :</span> Kotaro Daigo(voice), Nana Mori(voice), Tsubasa Honda(voice) </p>
+        <a href="#vplay"><button onclick="vclick()">Play</button></a> 
+
+    </div>
+
+    <div class="player">
+        <video id="vplay" class="videoplr" controls="controls" preload="auto"
+            poster="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Anime/WWY/wwyo.png">
+            <source
+                src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Anime/WWY/Weathering%20With%20You%20Official%20Subbed%20Trailer.mp4"
+                type="video/mp4">
+        </video>
+    </div>
+
+    <script>
+        var vid= document.getElementById("vplay");
+        function vclick(){
+            vid.play();
+        }
+    </script>
+
+</body>

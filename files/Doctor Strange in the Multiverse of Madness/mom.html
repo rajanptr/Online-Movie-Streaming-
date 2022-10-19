@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap" rel="stylesheet">
+
+    <!-- fontawsome kit -->
+    <script src="https://kit.fontawesome.com/9d071d29cc.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="mom.css">
+
+    <link rel="icon" type="images" href="/main/fav.png">
+
+    <title>Doctor Strange in the Multiverse of Madness</title>
+</head>
+
+<body>
+    <div class="logobox"><a href="../main/main.html"><img class="logo" src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/logo.svg" alt="logo"></a></div>
+
+    <div class="poster">
+        <img src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Movie/Doctor%20Strange%20in%20the%20Multiverse%20of%20Madness%20wide%202.jpg"
+            alt="Doctor Strange in the Multiverse of Madness">
+    </div>
+    <div class="name">
+        <h1>Doctor Strange in the Multiverse of Madness</h1>
+        <p>Doctor Strange teams up with a mysterious teenage girl from his dreams who can travel across multiverses, to
+            battle multiple threats, including other-universe versions of himself, which threaten to wipe out millions
+            across the multiverse. They seek help from Wanda the Scarlet Witch, Wong and others.</p>
+
+        <p><span>Director :</span> Sam Raimi <br>
+            <span>Writers :</span> Michael WaldronStan Lee(Doctor Strange created by), Steve Ditko(Doctor Strange
+            created
+            by)<br>
+            <span>Stars :</span> Benedict Cumberbatch, Elizabeth Olsen, Chiwetel Ejiofor, ...
+        </p>
+
+
+        <a href="#vplay"><button onclick="vclick()">Play</button></a> 
+
+    </div>
+
+    <div class="player">
+        <video id="vplay" class="videoplr" controls="controls" preload="auto"
+            poster="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Movie/Doctor%20Strange%20in%20the%20Multiverse%20of%20Madness%20wide%202.jpg">
+            <source
+                src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Movie/Doctor%20Strange%20in%20the%20Multiverse%20of%20Madness.mp4?t=2022-10-17T20%3A59%3A43.031Z"
+                type="video/mp4">
+        </video>
+    </div>
+
+    <script>
+        var vid= document.getElementById("vplay");
+        function vclick(){
+            vid.play();
+        }
+    </script>
+
+</body>

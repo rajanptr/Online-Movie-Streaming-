@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap" rel="stylesheet">
+
+
+    <!-- Flickity plugin -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="/path/to/cdn/jquery.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <link rel="stylesheet" href="inv.css">
+    <script src="inv.js"></script>
+
+    <link rel="icon" type="images" href="fav.png">
+    <script src="/main/movie.js"></script>
+
+    <title id="title">Tvshow | INVINCIBLE </title>
+</head>
+
+<body>
+    <section class="page">
+
+        <img class="logo" src="../main/logo.svg" alt="logo">
+        <h1 class="name" id="name">INVINCIBLE</h1>
+        <img class="poster" id="poster"
+            src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/TV%20Show/Invincible/invincible%20poster.jpg"
+            alt="poster">
+
+        <div class="about">
+            <p> Invincible is an American adult animated superhero television series, based on the Image Comics series
+                of the same name by Robert Kirkman, Cory Walker, and Ryan Ottley,[2] which premiered on Amazon Prime
+                Video. The show follows 17-year-old Mark Grayson and his transformation into a superhero under the
+                guidance of his father, Omni-Man, the most powerful being on the planet. During his transformation, Mark
+                finds himself struggling between his personal life and superhero duties, where he will be forced to
+                prove that he can be the hero that his father is. The series stars Steven Yeun, Sandra Oh, and J. K.
+                Simmons[3] as the Grayson family, while the rest of the cast serve as recurring characters.<br><br>
+            </p>
+
+            <a href="#vplay"><button onclick="vclick()">Play</button></a>
+        </div>
+
+
+        <div class="player">
+            <video id="vplay" class="videoplr" controls="controls" preload="auto" autoplay
+                poster="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/TV%20Show/Invincible/invincible.jpeg">
+                <source
+                    src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/TV%20Show/Invincible/Invincible%20_%20Official%20Trailer%20_%20Prime%20Video.mp4?t=2022-10-17T21%3A40%3A38.910Z"
+                    type="video/mp4">
+            </video>
+            <div class="aboutep">
+                <h2 id="headtitle">Watch Trailer</h2><br><br>
+                <p id="next">Next Episode</p><br>
+                <p id="nextep">Episode 1</p>
+            </div>
+        </div>
+
+        </div>
+
+
+
+        <div class="seasons">
+
+            <div class="slide">
+                <h3>SEASON 1</h3>
+                <div class="carousel"
+                    data-flickity='{"wrapAround":true,"pageDots": true, "freeScroll": true, "prevNextButtons": false}'>
+                    <div class="carousel-cell">
+                        <!-- Episode 1 -->
+                        <div class="show"><img class="thumnail" onclick="change1()"
+                                src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/TV%20Show/Invincible/invincible.jpeg"
+                                alt="Episode 1">
+                            <p>Episode 1</p>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <!-- Episode 2  -->
+                        <div class="show"><img class="thumnail" onclick="change2()"
+                                src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/TV%20Show/Invincible/invincible.jpeg"
+                                alt="Episode 2">
+                            <p>Episode 2</p>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <!-- Episode 3 -->
+                        <div class="show"><a href="#"><img class="thumnail" onclick="change3()"
+                                    src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/TV%20Show/Invincible/invincible.jpeg"
+                                    alt="Episode 3"></a>
+                            <p>Episode 3</p>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <!-- Episode 4 -->
+                        <div class="show"><a href="#"><img class="thumnail" onclick="change4()"
+                                    src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/TV%20Show/Invincible/invincible.jpeg"
+                                    alt="Episode 4"></a>
+                            <p>Episode 4</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <script>
+                var vid = document.getElementById("vplay");
+                function vclick() {
+                    vid.play();
+                }
+            </script>
+
+
+
+    </section>
+
+
+
+
+</body>
+
+</html>

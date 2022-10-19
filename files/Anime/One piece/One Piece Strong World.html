@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap" rel="stylesheet">
+
+    <!-- fontawsome kit -->
+    <script src="https://kit.fontawesome.com/9d071d29cc.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="OnePieceStrongWorld.css">
+
+    <link rel="icon" type="images" href="/main/fav.png">
+
+    <title>One Piece Strong World</title>
+</head>
+
+<body>
+    <div class="logobox"><a href="../main/main.html"><img class="logo" src="../main/logo.svg" alt="logo"></a></div>
+
+    <div class="poster">
+        <img src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Anime/one%20piece/One%20Piece%20Strong%20World.jpg"
+            alt="One Piece Strong World">
+    </div>
+    <div class="name">
+        <h1>One Piece Strong World</h1>
+        <p>Straw Hat Pirates must save their navigator and stop the legendary Pirate, Shiki the Golden Lion from conquering East Blue.</p>
+
+        <p><span>Director :</span> Munehisa Sakai <br>
+            <span>Writers :</span>  Eiichiro Oda(story and characters), Hirohiko Uesaka(screenplay) <br>
+            <span>Stars :</span> Felecia Angelle(English version), Bryan Baker(English version), Jeff Banks(English version) </p>
+        <a href="#vplay"><button onclick="vclick()">Play</button></a> 
+
+    </div>
+
+    <div class="player">
+        <video id="vplay" class="videoplr" controls="controls" preload="auto"
+            poster="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Anime/one%20piece/One%20Piece%20Strong%20World.jpg">
+            <source
+                src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Anime/one%20piece/One%20Piece_%20Strong%20World%20-%20Official%20Trailer.mp4?t=2022-10-17T22%3A07%3A42.901Z"
+                type="video/mp4">
+        </video>
+    </div>
+
+    <script>
+        var vid= document.getElementById("vplay");
+        function vclick(){
+            vid.play();
+        }
+    </script>
+
+</body>

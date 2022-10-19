@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap" rel="stylesheet">
+
+    <!-- fontawsome kit -->
+    <script src="https://kit.fontawesome.com/9d071d29cc.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="Forest Gump.css">
+
+    <link rel="icon" type="images" href="/main/fav.png">
+
+    <title>Forest Gump</title>
+</head>
+
+<body>
+    <div class="logobox"><a href="../main/main.html"><img class="logo" src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/logo.svg" alt="logo"></a></div>
+
+    <div class="poster">
+        <img src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Movie/Forest%20Gump-wide.jpg"
+            alt="Forest Gump">
+    </div>
+    <div class="name">
+        <h1>Forest Gump</h1>
+        <p>The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal and other historical events
+            unfold from the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his
+            childhood sweetheart.</p>
+
+        <p><span>Director :</span> Robert Zemeckis <br>
+            <span>Writers :</span> Winston Groom(novel), Eric Roth(screenplay)<br>
+            <span>Stars :</span> Tom HanksRobin WrightGary Sinise, ...
+        </p>
+
+
+        <a href="#vplay"><button onclick="vclick()">Play</button></a> 
+
+    </div>
+
+    <div class="player">
+        <video id="vplay" class="videoplr" controls="controls" preload="auto"
+            poster="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Movie/Forest%20Gump-wide.jpg">
+            <source
+                src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Movie/Forrest%20Gump.mp4?t=2022-10-17T21%3A09%3A27.023Z"
+                type="video/mp4">
+        </video>
+    </div>
+
+    <script>
+        var vid= document.getElementById("vplay");
+        function vclick(){
+            vid.play();
+        }
+    </script>
+
+</body>
