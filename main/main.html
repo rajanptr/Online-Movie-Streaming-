@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="main.css">
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap" rel="stylesheet">
+
+  <!-- fontawsome kit -->
+  <script src="https://kit.fontawesome.com/9d071d29cc.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <!-- Flickity plugin -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <script src="/path/to/cdn/jquery.min.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+  <!-- Script -->
+  <script src="movie.js"></script>
+
+  <link rel="icon" type="images" href="fav.png">
+
+  <title>flixx</title>
+</head>
+
+<body>
+  <section class="page">
+    <img class="logo" src="../main/logo.svg" alt="logo">
+
+
+    <div class="buttons">
+      <span id="user" class="prof">Hello</span>
+      <button type="submit" class="signoutbtn" onclick="logout()">Log Out</button>
+    </div>
+
+    <!-- <img class="upload" src="profile.svg" alt="uploadimg" id="myimg"> -->
+
+
+
+
+    <div class="certi">
+      <div class="carousel" data-flickity='{"wrapAround":true, "autoPlay":true, "pageDots": false}'>
+        <div class="carousel-cell">
+          <!--Arcane  -->
+          <div class="poster">
+            <img
+              src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Arcane%20wide.jpg"
+              alt="Arcane">
+          </div>
+          <div class="name">
+            <h1>Arcane</h1>
+
+            <p><span>Director :</span> Pascal Charrue, Arnaud Delord <br>
+              <span>Writers:</span> Mollie Bickley St. John, Ash Brannon, Alex Yee, ...
+            </p>
+
+
+            <a href="../files/arcane.html"><button class="play">Play</button></a>
+
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <!-- Avatar -->
+          <div class="poster">
+            <img
+              src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Avatar%20wide.jpg"
+              alt="Avatar">
+          </div>
+          <div class="name">
+            <h1>Avatar</h1>
+
+            <p><span>Director:</span> James Cameron <br>
+              <span>Writers:</span> James Cameron
+            </p>
+
+
+            <a href="../files/avatar.html"><button class="play">Play</button></a>
+
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <!--The Lion King -->
+          <div class="poster">
+            <img
+              src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/the%20lion%20king%20wide.jpg"
+              alt="The Lion King">
+          </div>
+          <div class="name">
+            <h1>The Lion King</h1>
+
+            <p><span>Director:</span> Jon Favreau <br>
+              <span>Writers:</span> Jeff Nathanson, Irene Mecchi, Jonathan Roberts
+            </p>
+
+
+            <a href="../files/lionking.html"><button class="play">Play</button></a>
+
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <!-- Venom: Let There Be Carnage -->
+          <div class="poster">
+            <img
+              src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Venom%202%20wide.jpg"
+              alt="Venom: Let There Be Carnage">
+          </div>
+          <div class="name">
+            <h1>Venom: Let There Be Carnage</h1>
+
+            <p><span>Director:</span> Andy Serkis <br>
+              <span>Writers:</span> Kelly Marcel, Tom Hardy
+            </p>
+            <a href="../files/venomltc.html"><button class="play">Play</button></a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+
+      <div class="search">
+        <input type="text" placeholder="Search Movies" id="search-box" onkeyup="search()">
+
+        <div class="main-movie">
+          <p id="alerttext"></p>
+          <ul>
+            <!-- the avenger -->
+            <li class="movie">
+              <div>
+                <img
+                  src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Movie/the%20avenger.jpg"
+                  alt="the avenger" class="image">
+                <div class="title">
+                  <p>The Avengers</p>
+                  <div class="btntitle">
+                    <a href="../files/avenger/avengers.html"><button class="text">Play</button></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Fantastic Beasts: The Crimes of Grindelwald-->
+            <li class="movie">
+              <div>
+                <img
+                  src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Movie/Fantastic%20Beasts%20The%20Crimes%20of%20Grindelwald.jpg"
+                  alt="Avatar" class="image">
+                <div class="title">
+                  <p>Fantastic Beasts: The Crimes of Grindelwald</p>
+                  <div>
+                    <a href="../files/Fantastic Beasts/fb-cog.html"><button class="text">Play</button></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Avengers: Age of Ultron-->
+            <li class="movie">
+              <div>
+                <img
+                  src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Movie/Avengers%20Age%20of%20Ultron.jpg"
+                  alt="Avatar" class="image">
+                <div class="title">
+                  <p>Avengers: Age of Ultron</p>
+                  <div>
+                    <a href="../files/avenger/ageofultron.html"><button class="text">Play</button></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Avengers: Infinity War -->
+            <li class="movie">
+              <div>
+                <img
+                  src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Movie/Avengers%20Infinity%20War.jpg"
+                  alt="Avatar" class="image">
+                <div class="title">
+                  <p>Avengers: Infinity War </p>
+                  <div>
+                    <a href="../files/avenger/Infinity War.html"><button class="text">Play</button></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Fantastic Beasts: The Secrets of Dumbledore-->
+            <li class="movie">
+              <div>
+                <img
+                  src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Movie/Fantastic%20Beasts%20The%20Secrets%20of%20Dumbledore.jpg"
+                  alt="Avatar" class="image">
+                <div class="title">
+                  <p>Fantastic Beasts: The Secrets of Dumbledore</p>
+                  <div>
+                    <a href="../files/Fantastic Beasts/Secrets of Dumbledore.html"><button class="text">Play</button></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Fantastic Beasts and Where to Find Them -->
+            <li class="movie">
+              <div>
+                <img
+                  src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Movie/Fantastic%20Beasts%20and%20Where%20to%20Find%20Them.jpg"
+                  alt="Avatar" class="image">
+                <div class="title">
+                  <p>Fantastic Beasts and Where to Find Them</p>
+                  <div>
+                    <a href="../files/Fantastic Beasts/wtft.html"><button class="text">Play</button></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Doctor Strange in the Multiverse of Madness  -->
+            <li class="movie">
+              <div>
+                <img
+                  src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Movie/Doctor%20Strange%20in%20the%20Multiverse%20of%20Madness.jpg"
+                  alt="Avatar" class="image">
+                <div class="title">
+                  <p>Doctor Strange in the Multiverse of Madness </p>
+                  <div>
+                    <a href="../files/Doctor Strange in the Multiverse of Madness/mom.html"><button
+                        class="text">Play</button></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- COCO -->
+            <li class="movie">
+              <div>
+                <img
+                  src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Movie/coco.jpg"
+                  alt="Avatar" class="image">
+                <div class="title">
+                  <p>COCO</p>
+                  <div>
+                    <a href="../files/coco/coco.html"><button class="text">Play</button></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!--  Your Name -->
+            <li class="movie">
+              <div>
+                <img
+                  src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Movie/your%20name.jpg"
+                  alt="Avatar" class="image">
+                <div class="title">
+                  <p> Your Name</p>
+                  <div>
+                    <a href="../files/your name/yourname.html"><button class="text">Play</button></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Lightyear -->
+            <li class="movie">
+              <div>
+                <img
+                  src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Movie/lightyear.jpg"
+                  alt="Avatar" class="image">
+                <div class="title">
+                  <p>Lightyear</p>
+                  <div>
+                    <a href="../files/lightyear/Lightyear.html"><button class="text">Play</button></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!--Sonic  -->
+            <li class="movie">
+              <div>
+                <img
+                  src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Movie/sonic.jpg"
+                  alt="Avatar" class="image">
+                <div class="title">
+                  <p>Sonic </p>
+                  <div>
+                    <a href="../files/sonic/sonic.html"><button class="text">Play</button></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Forest Gump -->
+            <li class="movie">
+              <div>
+                <img
+                  src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Movie/forest%20gump.jpg"
+                  alt="Avatar" class="image">
+                <div class="title">
+                  <p>Forest Gump</p>
+                  <div>
+                    <a href="../files/forest gump/Forest Gump.html"><button class="text">Play</button></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="slide">
+          <h3>TV SHOW</h3>
+          <div class="carousel" data-flickity='{"wrapAround":true,"pageDots": false, "freeScroll": true }'>
+            <div class="carousel-cell" onclick="adult()">
+              <!-- peaky Blinders -->
+              <div class="show"><a href="../files/TV Shows/Peaky Blinders/PeakyBlinders.html"><img class="thumnail"
+                    src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/TV%20Show/peaky%20blinder/Peaky%20Blinders.jpg"
+                    alt="peaky Blinders"></a></div>
+            </div>
+            <div class="carousel-cell" onclick="adult()">
+              <!-- Stranger things -->
+              <div class="show"><a href="../files/TV Shows/Stranger Things/Stranger Things.html"><img class="thumnail"
+                    src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/TV%20Show/Stranger%20things/stranger%20things.jpg"
+                    alt="Stranger things"></a></div>
+            </div>
+            <div class="carousel-cell" onclick="adult()">
+              <!-- Got -->
+              <div class="show"><a href="../files/TV Shows/game of thrones/got.html"><img class="thumnail"
+                    src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/TV%20Show/got/game%20of%20thrones.jpg"
+                    alt="Got"></a></div>
+            </div>
+            <div class="carousel-cell" onclick="adult()">
+              <!-- peaky Blinders -->
+              <div class="show"><a href="../files/TV Shows/Peaky Blinders/PeakyBlinders.html"><img class="thumnail"
+                    src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/TV%20Show/peaky%20blinder/Peaky%20Blinders.jpg"
+                    alt="peaky Blinders"></a></div>
+            </div>
+            <div class="carousel-cell" onclick="adult()">
+              <!-- The Boys -->
+              <div class="show"><a href="../files/TV Shows/The Boys/boys.html"><img class="thumnail"
+                    src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/TV%20Show/The%20boys/the%20boys%20wide%202.webp"
+                    alt="The Boys"></a></div>
+            </div>
+            <div class="carousel-cell" onclick="adult()">
+              <!-- Invincible -->
+              <div class="show"><a href="../files/TV Shows/invincible/inv.html"><img class="thumnail"
+                    src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/TV%20Show/Invincible/invincible.jpeg"
+                    alt="Invincible"></a></div>
+            </div>
+
+          </div>
+        </div>
+        <div class="slide">
+          <h3>ANIME</h3>
+          <div class="carousel" data-flickity='{"wrapAround":true,"pageDots": false, "freeScroll": true }'>
+            <div class="carousel-cell">
+              <!-- Jujutsu kaisen 0 -->
+              <div class="show"><a href="../files/Anime/Jujutsu kaisen 0/Jujutsukaisen0.html"><img class="thumnail"
+                    src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Anime/jujutsu%20kaisen/Jujutsu%20kaisen%200.avif"
+                    alt="Jujutsu kaisen 0"></a></div>
+            </div>
+            <div class="carousel-cell">
+              <!-- Weathering with you  -->
+              <div class="show"><a href="../files/Anime/weathering_with_you/weatheringwithyou.html"><img class="thumnail"
+                    src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Anime/WWY/weathering_with_you.png"
+                    alt="Weathering with you "></a></div>
+            </div>
+            <div class="carousel-cell">
+              <!-- Spirited Away -->
+              <div class="show"><a href="../files/Anime/Sprited Away/Spirited Away.html"><img class="thumnail"
+                    src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Anime/spirated%20away/Spirited%20Away.webp"
+                    alt="Spirited Away"></a></div>
+            </div>
+            <div class="carousel-cell">
+              <!-- Demon slayer: mugen train -->
+              <div class="show"><a href="../files/Anime/demon slayer/Demon slayer-mugen train.html"><img class="thumnail"
+                    src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Anime/Demon%20Slayer/Demon%20slayer%20mugen%20train.jpg"
+                    alt="Demon slayer: mugen train"></a></div>
+            </div>
+            <div class="carousel-cell">
+              <!-- One Piece: Strong World -->
+              <div class="show"><a href="../files/Anime/One piece/One Piece Strong World.html"><img class="thumnail"
+                    src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Anime/one%20piece/One%20Piece%20Strong%20World.jpg"
+                    alt="One Piece: Strong World"></a></div>
+            </div>
+            <div class="carousel-cell">
+              <!-- 5 Centimeters per Second -->
+              <div class="show"><a href="../files/Anime/5 cm per sec/5cmps.html"><img class="thumnail"
+                    src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Anime/5cmpinch/5-centimeters-per-second.webp"
+                    alt="5 Centimeters per Second"></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="upcomebox">
+          <h3>UPCOMING</h3>
+          <div class="upcome">
+            <!-- avatar2 -->
+            <div class="movcome">
+              <img
+                src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Upcomming/avatar%202.webp"
+                alt="Avatar" class="post">
+              <div class="upcom-title">
+                <div class="km">
+                  <button class="btn" onclick="knowmore1()"><span>Know More</span></button>
+                </div>
+              </div>
+            </div>
+            <!-- black adam -->
+            <div class="movcome">
+              <img
+                src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Upcomming/black%20adam.jpg"
+                alt="black adam" class="post">
+              <div class="upcom-title">
+                <div class="km">
+                  <button class="btn" onclick="knowmore2()"><span>Know More</span></button>
+                </div>
+              </div>
+            </div>
+            <!--one piece  -->
+            <div class="movcome">
+              <img
+                src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Upcomming/one%20piece%20film%20red.webp"
+                alt="one piece" class="post">
+              <div class="upcom-title">
+                <div class="km">
+                  <button class="btn" onclick="knowmore3()"><span>Know More</span></button>
+                </div>
+              </div>
+            </div>
+            <!-- secret invision -->
+            <div class="movcome">
+              <img
+                src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Upcomming/secret%20invision.webp"
+                alt="secret invision" class="post">
+              <div class="upcom-title">
+                <div class="km">
+                  <button class="btn" onclick="knowmore4()"><span>Know More</span></button>
+                </div>
+              </div>
+            </div>
+            <!-- across the spiderverse -->
+            <div class="movcome">
+              <img
+                src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Upcomming/across%20the%20spider%20verse.jpg"
+                alt="across the spiderverse" class="post">
+              <div class="upcom-title">
+                <div class="km">
+                  <button class="btn" onclick="knowmore5()"><span>Know More</span></button>
+                </div>
+              </div>
+            </div>
+            <!-- fast x -->
+            <div class="movcome">
+              <img
+                src="https://fywaupjcpwijkhaslcxh.supabase.co/storage/v1/object/public/movies/Upcomming/fast%20x.webp"
+                alt="fast x" class="post">
+              <div class="upcom-title">
+                <div class="km">
+                  <button class="btn" onclick="knowmore6()"><span>Know More</span></button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="about">
+            <h4 id="about-title"></h4>
+            <p id="about-topic"></p>
+            <p id="about-rele"></p>
+            <p id="about-dir"></p>
+            <p id="about-comp"></p>
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+
+
+  <script src="firebase.js"></script>
+  <script src="main.js"></script>
+  <script src="logout.js"></script>
+
+</body>
+
+</html>
